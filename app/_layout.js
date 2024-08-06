@@ -34,7 +34,7 @@ const _layout = () => {
         name="contact"
         options={{ headerTitle: "Contact Page", presentation: "modal" }}
       />
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
     </Stack>
   );
 };

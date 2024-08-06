@@ -2,10 +2,11 @@ import { Button, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Tabs, router } from "expo-router";
 import { Entypo, AntDesign } from "@expo/vector-icons";
+import { DrawerToggleButton } from "@react-navigation/drawer";
 
 const _layout = () => {
   return (
-    <Tabs>
+    <Tabs screenOptions={{ headerLeft: () => <DrawerToggleButton /> }}>
       <Tabs.Screen
         name="feed"
         options={{
